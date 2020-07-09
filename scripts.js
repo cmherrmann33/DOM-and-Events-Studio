@@ -4,7 +4,7 @@
 function init() {
     let takeoff = document.getElementById("takeoff");
     let flightStatus = document.getElementById("flightStatus");
-    let shuttleBackground = document.querySelector("shuttleBackground");
+    let shuttleBackground = document.getElementById("shuttleBackground");
     let spaceShuttleHeight = document.getElementById("spaceShuttleHeight");
 
 
@@ -13,7 +13,7 @@ function init() {
         if (response) {
             flightStatus.innerHTML = "Shuttle in flight.";
             spaceShuttleHeight.innerHTML = "10,000";
-            shuttleBackground.background = "blue";
+            shuttleBackground.style.background = "blue";
         } 
     });
 
