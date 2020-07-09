@@ -11,6 +11,8 @@ function init() {
 
     let missionAbort = document.getElementById("missionAbort");
 
+    let button = document.getElementById("button");
+
 
     takeoff.addEventListener("click", function() {
         let response = window.confirm("Confirm that the shuttle is ready for takeoff")
@@ -26,16 +28,20 @@ function init() {
         flightStatus.innerHTML = "The shuttle has landed.";
         spaceShuttleHeight.innerHTML = "0";
         shuttleBackground.style.background = "green";
-    })
+    });
 
     missionAbort.addEventListener("click", function() {
         let response2 = window.confirm("Confirm that you want to abort the mission.");
         if (response2) {
             flightStatus.innerHTML = "Mission aborted.";
-            spaceShuttleHeight = '0';
+            spaceShuttleHeight.innerHTML = "0";
             shuttleBackground.style.background = "green";
         }
-    })
+    });
+
+    button.addEventListener("click", function() {
+        if 
+    });
 
 }
 
